@@ -31,6 +31,15 @@ public class MainActivity extends AppCompatActivity implements SearchView.OnQuer
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /**
+         * Some ERRORS to be fix later
+         *
+         * Books cover photo didn't appear in detail page (I think it is Picasso problem)
+         * Advanced search didn't return the searched book (Have no idea why that!! )
+         *
+         */
+
+
         mLoadingPrograss = findViewById(R.id.pb_loading);
         rvBooks = findViewById(R.id.rv_books);
         RecyclerView.LayoutManager booksLayoutManger = new LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false);
